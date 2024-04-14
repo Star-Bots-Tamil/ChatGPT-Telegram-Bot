@@ -1,5 +1,5 @@
 BOT:
-  TOKEN: 55***88  # Get your bot token from @BotFater
+  TOKEN: "6172666504:AAE7NHAasDmnXn1oBvcjHVh28aQqZhYDnOc"  # Get your bot token from @BotFater
 AI:
   VERSION: "2023-03-15-preview"
   TYPE: "azure"
@@ -11,7 +11,7 @@ MYSQL:
   DBPORT: 3306
   DBUSER: root
   DBPWD: dbpassword
-  DBNAME: database_name
+  DBNAME: Cluster0
   DBCHAR: utf8mb4
 
 RATE_LIMIT:
