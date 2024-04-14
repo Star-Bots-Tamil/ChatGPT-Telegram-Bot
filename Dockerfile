@@ -1,12 +1,15 @@
-FROM python:3.9-slim
+FROM python:3.10
 
-LABEL org.opencontainers.image.source=https://github.com/Star-Bots-Tamil/ChatGPT-Telegram-Bot
+WORKDIR /app
 
-ARG APP_HOME=/app
-WORKDIR $APP_HOME
+COPY requirements.txt /app/
 
-ADD . $APP_HOME
+RUN apt update && apt upgrade -y
 
-RUN pip install -r $APP_HOME/requirements.txt
+COPY . .
 
-ENTRYPOINT ["python", "main.py"]
+RUN pip3 install -r requirements.txt
+
+COPY . /app
+
+CMD python main.py
