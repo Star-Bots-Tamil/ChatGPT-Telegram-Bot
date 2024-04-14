@@ -12,7 +12,7 @@ MYSQL:
   DBUSER: root
   DBPWD: dbpassword
   DBNAME: Cluster0
-  DBCHAR: utf8mb4
+  DBCHAR: postgres://tufiatbi:uuel5uxW9dhBEfYz5WLHi2UclUzPyiSD@heffalump.db.elephantsql.com/tufiatbi
 
 RATE_LIMIT:
   0: 10
@@ -30,4 +30,4 @@ MAX_TOKEN:
   2: 1024
 
 TIME_SPAN: 3 #Minutes
-DEVELOPER_CHAT_ID: 467300857
+DEVELOPER_CHAT_ID: 1391556668
